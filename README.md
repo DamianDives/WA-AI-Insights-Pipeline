@@ -12,7 +12,7 @@ On the technical side, I prioritized Data Integrity. The system uses a "Store-Fi
 ## 📸 Project Previews
 | Webhook Ingestion | AI Data Extraction |
 |---|---|
-| ![Message Generation](./screenshots/success.jpeg) | ![AI Result](./screenshots/ref.jpeg) |
+| ![Message Generation](./screenshots/success.jpeg) | ![AI Result](./screenshots/ref.jpeg) || ![Server Running](./screenshots/serverrun.png) |
 
 ---
 
