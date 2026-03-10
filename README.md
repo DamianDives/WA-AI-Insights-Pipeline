@@ -1,14 +1,18 @@
 # WhatsApp AI Insights Pipeline
 
-## 📌 Project Overview
-A production-ready Node.js & TypeScript pipeline designed to handle real-time WhatsApp webhooks. This system ingests incoming messages, intelligently groups them into conversation sessions based on time-based windows, and utilizes OpenAI's GPT models to extract structured business intelligence including summaries, action items, and entities.
+## Summary
+I developed this pipeline to handle the inherent "noise" in raw WhatsApp message streams. The core challenge wasn't just receiving data, but turning a continuous flow of texts into something a business can actually use.
+
+To solve this, I built a custom Sessionization Engine. Since people don't chat in perfect blocks, the logic uses a 30-minute "cool-down" period to automatically group related messages together. This gives the AI the context it needs to provide accurate summaries.
+
+On the technical side, I prioritized Data Integrity. The system uses a "Store-First" architecture where raw payloads are saved immediately upon arrival. This decouples the webhook response from the AI processing, ensuring that we never miss a message from Meta even if the OpenAI API experiences latency.
 
 ---
 
 ## 📸 Project Previews
 | Webhook Ingestion | AI Data Extraction |
 |---|---|
-| ![Webhook Test](./screenshots/ref.png) | ![AI Result](./screenshots/success.png) |
+| ![Webhook Test](./screenshots/ref.jpeg) | ![AI Result](./screenshots/success.jpeg) |
 
 ---
 
