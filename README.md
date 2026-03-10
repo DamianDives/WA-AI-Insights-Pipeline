@@ -34,7 +34,7 @@ On the technical side, I prioritized Data Integrity. The system uses a "Store-Fi
 
 ---
 
-## 🚀 Push Protection Bypass (CRITICAL)
+## Push Protection Bypass
 If GitHub blocks your push due to "Secret Scanning," use this specific bypass command to fulfill the assignment submission:
 
 git push origin main --push-option="skip-secret-scanning"
