@@ -9,7 +9,7 @@ On the technical side, I prioritized Data Integrity. The system uses a "Store-Fi
 
 ---
 
-## 📸 Project Previews
+## Project Previews
 | Webhook Ingestion | AI Data Extraction |
 |---|---|
 | ![Message Generation](./screenshots/success.jpeg) | ![AI Result](./screenshots/ref.jpeg) |
@@ -17,7 +17,7 @@ On the technical side, I prioritized Data Integrity. The system uses a "Store-Fi
 
 ---
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### 1. Webhook Ingestion Layer
 - **Endpoint**: POST /webhook/whatsapp
@@ -44,7 +44,7 @@ git push origin main --force --push-option="skip-secret-scanning"
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. Clone & Install:
    git clone https://github.com/DamianDives/WA-AI-Insights-Pipeline.git
@@ -66,7 +66,7 @@ git push origin main --force --push-option="skip-secret-scanning"
 
 ---
 
-## 🛡️ Security Note
+## API Key
 The OpenAI API key used during development has been migrated to environment variables to adhere to security best practices. For the purpose of this GitHub submission, the .env file contains placeholder values. To test the live AI extraction features, please input a valid OpenAI API key into your local .env file.
 
 ---
