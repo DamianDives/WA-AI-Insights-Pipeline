@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model WhatsAppMessageRaw {
+  id                  String   @id @default(uuid())
+  provider_message_id String   @unique
+  received_at         DateTime @default(now())
+  from_phone          String
+  chat_id             String
+  chat_type           String
+  sender_name         String?
+  message_type        String
+  text                String?
+  raw_payload         String
+}
+
+model ConversationSession {
+  id            String   @id @default(uuid())
+  chat_id       String
+  chat_type     String
+  session_start DateTime @default(now())
+  session_end   DateTime @default(now())
+  message_count Int      @default(0)
+  ai_extract    AiSessionExtract?
+}
+
+model AiSessionExtract {
+  id           String   @id @default(uuid())
+  session_id   String   @unique
+  summary      String
+  key_points   String
+  action_items String
+  entities     String
+  model        String
+  latency      Int
+  created_at   DateTime @default(now())
+  session      ConversationSession @relation(fields: [session_id], references: [id])
+}
+
+model FailedJob {
+  id            String   @id @default(uuid())
+  job_type      String
+  session_id    String
+  error_message String
+  error_payload String?
+  created_at    DateTime @default(now())
+}
