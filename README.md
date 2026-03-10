@@ -70,4 +70,3 @@ git push origin main --force --push-option="skip-secret-scanning"
 The OpenAI API key used during development has been migrated to environment variables to adhere to security best practices. For the purpose of this GitHub submission, the .env file contains placeholder values. To test the live AI extraction features, please input a valid OpenAI API key into your local .env file.
 
 ---
-**Developed for Technical Assessment by DamianDives**
