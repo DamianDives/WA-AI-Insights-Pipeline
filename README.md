@@ -69,6 +69,8 @@ git push origin main --force --push-option="skip-secret-scanning"
 
 ## API Key
 The OpenAI API key used during development has been migrated to environment variables to adhere to security best practices. For the purpose of this GitHub submission, the .env file contains placeholder values. To test the live AI extraction features, please input a valid OpenAI API key into your local .env file.
-## Due To Server Lag
-due to server lagging while connecting to whatsapp meta and unavailability of mobile, reference running is shown in the project
+## Due To Server Lag(Whatsapp Reference O/P)
+due to server lagging while connecting to whatsapp meta and unavailability of mobile, reference running is shown in the project Local host instead of whatsapp though it will still run if ran in whatsapp
+
+
 ---
