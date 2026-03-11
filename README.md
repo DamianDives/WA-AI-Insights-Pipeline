@@ -13,7 +13,8 @@ On the technical side, I prioritized Data Integrity. The system uses a "Store-Fi
 | Webhook Ingestion | AI Data Extraction |
 |---|---|
 | ![Message Generation](./screenshots/success.jpeg) | ![AI Result](./screenshots/ref.jpeg) |
-| ![Server Running](./screenshots/serverrun.png) |
+| ![Server Running](./screenshots/serverrun.png) | ![METAforbusiness](./screenshots/META.png) |
+![TestRun](./screenshots/metaforbiz.png) |
 
 ---
 
@@ -68,5 +69,6 @@ git push origin main --force --push-option="skip-secret-scanning"
 
 ## API Key
 The OpenAI API key used during development has been migrated to environment variables to adhere to security best practices. For the purpose of this GitHub submission, the .env file contains placeholder values. To test the live AI extraction features, please input a valid OpenAI API key into your local .env file.
-
+## Due To Server Lag
+due to server lagging while connecting to whatsapp meta and unavailability of mobile, reference running is shown in the project
 ---
