@@ -8,7 +8,7 @@ app.use(express.json());
 const prisma = new PrismaClient();
 
 const openai = new OpenAI({
-  apiKey: OPENAI_API_KEY,
+  apiKey: OPENAI_API_KEY,  
 });
 
 async function runAIExtraction(sessionId: string, retryCount = 0) {
